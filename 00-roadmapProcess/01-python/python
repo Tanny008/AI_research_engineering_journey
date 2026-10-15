@@ -1,0 +1,37 @@
+# Python Programming
+
+This folder contains my Python learning exercises, implementations, and notes as part of my journey to AI Research Engineering in Robotics.
+
+---
+
+### 📚 Topics Covered
+
+1.  Python Basics
+2.  Variables and Data Types
+3.  Operators
+4.  Conditional Statements
+5.  Loops
+6.  Lists, Tuples and Sets
+7.  Dictionaries
+8.  Functions
+9.  Object-Oriented Programming (OOP)
+10. File Handling and Error Handling
+
+### 🧠 Learning Approach
+
+For each topic, I follow:
+**Code → Test → Solve Exercises → Document**
+
+- Write clean, runnable code
+- Test edge cases
+- Solve exercises independently
+- Document what I learned, mistakes, and improvements
+
+### 📂 Structure
+Each topic has its own file / sub-folder with:
+- `notes.md` - concept explanation
+- `examples.py` - practice code
+- `exercises/` - problem solving
+
+---
+Currently in progress: **Phase 1 - Python Foundations**
