@@ -1,0 +1,101 @@
+##all_python_operators
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+variable = 10
+list = [1,2,3,4,5]
+
+#arithmetic_operators
+#Addition
+sum = num1 + num2
+print("The sum of two given numbers is: ",sum)
+
+#Multiplication
+product = num1 * num2
+print("The product of two given numbers is: ",product)
+
+#subtraction
+difference = num1-num2
+print("The difference of two numbers is: ",difference)
+
+#division
+div = num1/num2
+print("The division of two given numbers is: ",div)
+
+#floor_div
+absolute_val = num1//num2
+print("The absolute value of two given numbers is: ",absolute_val)
+
+#modulus
+remainder = num1 % num2
+print("The remainder of two given numbers is: ",remainder)
+
+#lambda
+power = num1 ** num2
+print("The power of two given numbers is: ",power)
+
+#comparison_operator
+#greater_than_equal_to
+greater_than_equal_to = num1 <= num2
+print("Is number 1 is greater than or equal to number2: ",greater_than_equal_to)
+
+#smaller_than_equal_to
+smaller_than_equal_to = num1>= num2
+print("Is number 2 is smaller than or equal to number 2: ",smaller_than_equal_to)
+
+#greater_than
+greater_than = num1 > num2
+print("Is number 1 is greater than number 2: ",greater_than)
+
+#smaller_than
+smaller_than = num1 < num2
+print("is number 1 is smaller than number 2: ",smaller_than)
+
+#equality
+equality = num1 == num2
+print("is number 1 is equal to number 2: ",equality)
+
+#not_equality
+not_equality = num1 != num2
+print("is number 1 is not equal to number2: ")
+
+#logical_operators
+#and_operators
+print(num1 >= 1 and num2 <= 100)
+
+#or_operator
+print(num1 >= 1 or num2 <= 100)
+
+#not_operator
+print(not(num1 >= 1 and num2 <= 100))
+
+#assignment_operators
+#simple_assignment
+variable = 23
+print("The variable is assigned ",variable)
+
+#addition_assignment
+variable += 2
+print("Now after addition assignment the value of variable is: ",variable)
+
+#multiplication_assignment
+variable *= 2
+print("now after multiplication assignment the value of a variable is: ",variable)
+
+#division_assignment
+variable /= 2
+print("now after division assignment the value of a variable is: ",variable)
+
+#modulus_assignment
+variable %= 2
+print("now after modulus assignment the value of a variable is: ",variable)
+
+#subtraction_assignment
+variable -= 2
+print("now after subtraction assignment the value of a variable is: ",variable)
+
+#membership_operator
+#in_operator
+print("Is 4 is in list: ",4 in list)
+
+#not_in_operator
+print("Is 2 is in list: ", 2 not in list)
