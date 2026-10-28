@@ -1,0 +1,46 @@
+"""
+03_conditions.py
+Topic: if / elif / else - Conditions
+"""
+
+# Inputs
+marks = int(input("Enter marks out of 100: "))
+age = int(input("Enter age: "))
+
+print("\n--- 1. SIMPLE IF ---")
+if marks >= 40:
+    print("Result: Pass")
+
+print("\n--- 2. IF-ELSE ---")
+if marks % 2 == 0:
+    print("Marks are Even")
+else:
+    print("Marks are Odd")
+
+print("\n--- 3. IF-ELIF-ELSE (Grade) ---")
+if marks >= 90:
+    print("Grade: A+")
+elif marks >= 75:
+    print("Grade: A")
+elif marks >= 60:
+    print("Grade: B")
+elif marks >= 40:
+    print("Grade: C")
+else:
+    print("Grade: Fail")
+
+print("\n--- 4. CONDITIONS + OPERATORS (Your Probability Logic) ---")
+# Scholarship: age < 25 AND marks > 80 OR marks == 100
+if (age < 25 and marks > 80) or marks == 100:
+    print("Scholarship: Eligible")
+else:
+    print("Scholarship: Not Eligible")
+
+print("\n--- 5. NESTED IF ---")
+if marks >= 40:
+    if marks >= 90:
+        print("Topper - Pass with Distinction")
+    else:
+        print("Pass")
+else:
+    print("Fail - Try Again")
