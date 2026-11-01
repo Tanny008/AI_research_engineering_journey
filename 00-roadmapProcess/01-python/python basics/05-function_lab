@@ -1,0 +1,17 @@
+def binary_to_decimal(n):
+    power = 1
+    sum=0
+    last_digit=0
+    while(n > 0):
+
+        #last_digit_extraction
+        last_digit = n % 10
+        sum += last_digit * power
+
+        #updating_the_values
+        power *=2
+        n //= 10
+
+    return sum
+
+print(binary_to_decimal(1100))
