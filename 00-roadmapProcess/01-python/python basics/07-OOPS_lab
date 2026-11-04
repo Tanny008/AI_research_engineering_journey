@@ -1,0 +1,44 @@
+# 05_OOP.py - OOP in one file
+# Concepts: Class, Object, Constructor, Inheritance, Polymorphism
+
+# 1. CLASS + CONSTRUCTOR
+class Robot:
+    def __init__(self, name, battery):
+        # Constructor - runs when object is created
+        self.name = name
+        self.battery = battery
+        print(f"Robot {self.name} created!")
+
+    # 4. POLYMORPHISM - Child class can change this behaviour
+    def move(self):
+        print(f"{self.name} is moving normally...")
+
+    def show_battery(self):
+        print(f"{self.name} battery: {self.battery}%")
+
+    # Destructor - runs when object is destroyed
+    def __del__(self):
+        print(f"Robot {self.name} shutdown.")
+
+# 3. INHERITANCE - HumanoidRobot IS-A Robot
+class HumanoidRobot(Robot):
+    def __init__(self, name, battery, legs):
+        # Constructor calls parent constructor
+        super().__init__(name, battery)
+        self.legs = legs
+
+    # Polymorphism - same function, different behaviour
+    def move(self):
+        print(f"{self.name} is walking on {self.legs} legs like a human!")
+
+# 2. OBJECT
+if __name__ == "__main__":
+    r1 = Robot("Atlas", 90)
+    r1.show_battery()
+    r1.move()
+
+    print("----------------")
+
+    h1 = HumanoidRobot("Sophia", 75, 2)
+    h1.show_battery()
+    h1.move()  # Calls Humanoid version, not Robot version
